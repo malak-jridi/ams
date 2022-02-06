@@ -5,5 +5,11 @@
 	</head>
 	<body>
 		<h1 align="center">Ma première vue Spring en MVC</h1>
+		<h3 th:text= "${workshop}"></h3>
+		<h2>Liste des formations </h2>
+		<ul>
+		    <li th:each="val: ${vals}" th:text="${val}" />
+		</ul>
+
 	</body>
 </html>
